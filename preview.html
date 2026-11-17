@@ -1,0 +1,1397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123c30">
+<meta name="description" content="Shashwat Ayurveda Clinic, Harra Ki Chungi, Azamgarh. Explore Ayurvedic healthcare consultation and contact the clinic for appointments.">
+<title>Shashwat Ayurveda | Ayurvedic Clinic, Azamgarh</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green:#123c30;
+  --green2:#1c5945;
+  --green3:#2c7658;
+  --gold:#bd9b5b;
+  --cream:#f8f6ef;
+  --white:#ffffff;
+  --ink:#1d3028;
+  --muted:#78847c;
+  --line:#e8e7dd;
+  --shadow:0 18px 55px rgba(18,60,48,.10);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+img{max-width:100%;display:block}
+::selection{background:var(--gold);color:white}
+
+.container{width:min(1180px,90%);margin:auto}
+.section{padding:105px 0}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  color:var(--green3);font-size:11px;font-weight:800;
+  letter-spacing:2.5px;text-transform:uppercase;
+  margin-bottom:18px;
+}
+.eyebrow:before{content:"";width:27px;height:1px;background:var(--gold)}
+.heading{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(36px,5vw,58px);
+  line-height:1.15;font-weight:500;
+}
+.heading span{color:var(--green3);font-style:italic}
+.subtext{
+  color:var(--muted);font-size:15px;line-height:1.9;
+  max-width:570px;margin-top:18px;
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:11px;padding:15px 24px;border-radius:4px;
+  font-size:12px;font-weight:800;letter-spacing:1px;
+  text-transform:uppercase;border:1px solid transparent;
+  transition:.35s;
+}
+.btn-primary{background:var(--green);color:white}
+.btn-primary:hover{background:var(--green3);transform:translateY(-4px);box-shadow:var(--shadow)}
+.btn-outline{border-color:rgba(255,255,255,.55);color:white}
+.btn-outline:hover{background:white;color:var(--green)}
+.btn-light{background:white;color:var(--green);border:1px solid var(--line)}
+.btn-light:hover{background:var(--green);color:white}
+
+/* Announcement */
+.topbar{
+  background:var(--green);color:#e7e9dd;
+  padding:10px 5%;text-align:center;font-size:11px;
+  letter-spacing:1px;
+}
+.topbar strong{color:#e6c78e}
+
+/* Navigation */
+header{
+  position:sticky;top:0;z-index:1000;
+  background:rgba(248,246,239,.96);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  height:82px;display:flex;align-items:center;
+  justify-content:space-between;gap:25px;
+}
+.brand{display:flex;align-items:center;gap:12px;min-width:230px}
+.brand-icon{
+  height:46px;width:46px;background:var(--green);
+  color:var(--gold);display:grid;place-items:center;
+  border-radius:50%;font-size:25px;
+}
+.brand-name{font-family:'Playfair Display',serif;font-size:21px;color:var(--green)}
+.brand-small{display:block;font-size:9px;letter-spacing:2px;font-weight:700;color:var(--muted);margin-top:3px}
+.navlinks{display:flex;align-items:center;gap:28px}
+.navlinks a{
+  font-size:11px;font-weight:700;letter-spacing:.8px;
+  color:#44564b;transition:.3s;position:relative;
+}
+.navlinks a:after{
+  content:"";position:absolute;bottom:-8px;left:0;
+  width:0;height:2px;background:var(--gold);transition:.3s;
+}
+.navlinks a:hover{color:var(--green)}
+.navlinks a:hover:after{width:100%}
+.nav-action{padding:13px 19px;font-size:10px}
+.menu-toggle{
+  display:none;background:none;border:0;color:var(--green);
+  font-size:28px;
+}
+
+/* Hero */
+.hero{
+  min-height:710px;position:relative;display:flex;
+  align-items:center;overflow:hidden;background:var(--green);
+  color:white;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+  linear-gradient(90deg,rgba(10,39,30,.97) 0%,rgba(10,39,30,.86) 48%,rgba(10,39,30,.30) 100%),
+  url('https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=2000&q=85') center/cover;
+  transform:scale(1.06);animation:heroZoom 15s ease-in-out infinite alternate;
+}
+@keyframes heroZoom{to{transform:scale(1.14)}}
+.hero:after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 80% 40%,rgba(189,155,91,.15),transparent 35%);
+}
+.hero-content{position:relative;z-index:2;padding:110px 0;max-width:760px}
+.hero-label{
+  display:inline-flex;align-items:center;gap:12px;
+  color:#dfc18b;font-size:11px;letter-spacing:3px;
+  text-transform:uppercase;margin-bottom:28px;
+}
+.hero-label:before{content:"";width:35px;height:1px;background:var(--gold)}
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(47px,7vw,83px);
+  line-height:1.08;font-weight:500;
+  letter-spacing:-1px;
+}
+.hero h1 em{color:#d7b87e;font-weight:400}
+.hero-description{
+  margin-top:25px;color:#d0dbd3;
+  max-width:560px;font-size:15px;line-height:1.9;
+}
+.hero-buttons{display:flex;gap:15px;flex-wrap:wrap;margin-top:38px}
+.hero-meta{
+  display:flex;gap:34px;flex-wrap:wrap;
+  margin-top:65px;padding-top:25px;
+  border-top:1px solid rgba(255,255,255,.18);
+}
+.meta-item strong{display:block;font-size:20px;color:#e3c58e}
+.meta-item small{font-size:10px;color:#c1cec5;letter-spacing:1px;text-transform:uppercase}
+.hero-decoration{
+  position:absolute;right:8%;top:20%;width:310px;height:310px;
+  border:1px solid rgba(222,193,137,.28);border-radius:50%;
+  animation:rotate 35s linear infinite;z-index:1;
+}
+.hero-decoration:before,.hero-decoration:after{
+  content:"";position:absolute;border:1px solid rgba(222,193,137,.2);
+  border-radius:50%;inset:24px;
+}
+.hero-decoration:after{inset:55px}
+@keyframes rotate{to{transform:rotate(360deg)}}
+.floating-leaf{
+  position:absolute;color:rgba(223,193,139,.5);
+  font-size:42px;animation:float 6s ease-in-out infinite;
+}
+.leaf1{top:16%;right:17%}
+.leaf2{bottom:17%;right:8%;animation-delay:2s}
+@keyframes float{50%{transform:translateY(-24px) rotate(12deg)}}
+
+/* Trust strip */
+.trust-strip{background:white;border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.trust-item{
+  padding:27px 20px;display:flex;align-items:center;
+  justify-content:center;gap:14px;border-right:1px solid var(--line);
+}
+.trust-item:last-child{border:0}
+.trust-icon{font-size:26px;color:var(--gold)}
+.trust-item strong{font-size:12px;display:block;color:var(--green)}
+.trust-item small{font-size:10px;color:var(--muted)}
+
+/* About */
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:85px;align-items:center;
+}
+.about-images{position:relative;padding:0 40px 45px 0}
+.about-main-img{
+  height:500px;width:100%;object-fit:cover;
+  border-radius:4px;
+}
+.about-secondary{
+  position:absolute;bottom:0;right:0;
+  width:47%;height:210px;object-fit:cover;
+  border:9px solid var(--cream);border-radius:4px;
+}
+.about-stamp{
+  position:absolute;top:25px;left:-25px;
+  background:var(--green);color:white;padding:23px;
+  width:125px;height:125px;border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  border:1px solid var(--gold);outline:5px solid var(--cream);
+}
+.about-stamp strong{font-family:'Playfair Display';font-size:27px;color:#e4c58e}
+.about-stamp small{font-size:9px;letter-spacing:1px;text-align:center}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
+.point{display:flex;gap:12px;align-items:flex-start}
+.point-icon{
+  width:34px;height:34px;flex-shrink:0;border-radius:50%;
+  display:grid;place-items:center;background:#e6eee5;color:var(--green);
+}
+.point strong{font-size:12px;display:block}
+.point small{font-size:11px;color:var(--muted);line-height:1.6}
+
+/* Services */
+.services{background:#f0f1e9}
+.section-heading{text-align:center;margin-bottom:55px}
+.section-heading .subtext{margin:17px auto 0}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-card{
+  background:white;padding:34px 29px;
+  border:1px solid #e8e8dd;position:relative;
+  transition:.4s;overflow:hidden;min-height:250px;
+}
+.service-card:before{
+  content:"";position:absolute;bottom:0;left:0;
+  height:3px;width:0;background:var(--gold);transition:.4s;
+}
+.service-card:hover{transform:translateY(-9px);box-shadow:var(--shadow)}
+.service-card:hover:before{width:100%}
+.service-number{position:absolute;right:24px;top:20px;color:#e5e7de;font-family:'Playfair Display';font-size:34px}
+.service-icon{
+  width:58px;height:58px;background:#edf2e9;
+  display:grid;place-items:center;font-size:27px;
+  border-radius:50%;margin-bottom:23px;
+}
+.service-card h3{font-family:'Playfair Display';font-size:23px;font-weight:500;color:var(--green)}
+.service-card p{font-size:12px;color:var(--muted);line-height:1.8;margin-top:12px}
+.service-link{display:inline-block;margin-top:18px;color:var(--green3);font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
+
+/* Philosophy */
+.philosophy{
+  position:relative;background:var(--green);color:white;overflow:hidden;
+}
+.philosophy:before{
+  content:"✺";position:absolute;right:-50px;top:-150px;
+  font-size:500px;color:rgba(255,255,255,.025);
+}
+.philosophy-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;position:relative}
+.philosophy .eyebrow{color:#e3c48e}
+.philosophy .heading span{color:#d5b77c}
+.philosophy .subtext{color:#c5d1c8}
+.philosophy-list{margin-top:30px;display:grid;gap:20px}
+.philosophy-row{display:flex;gap:15px;align-items:center}
+.philosophy-row i{
+  font-style:normal;width:36px;height:36px;
+  display:grid;place-items:center;border:1px solid #728e7c;
+  border-radius:50%;color:#dfc18b;
+}
+.philosophy-row strong{font-size:13px}
+.philosophy-row small{display:block;color:#aebfb2;font-size:11px;margin-top:4px}
+.philosophy-image{
+  height:450px;width:100%;object-fit:cover;
+  border-radius:3px;filter:saturate(.75);
+}
+.philosophy-quote{
+  background:#e9e5d7;color:var(--green);
+  padding:27px 30px;margin:-65px 25px 0;
+  position:relative;z-index:2;font-family:'Playfair Display';
+  font-size:21px;font-style:italic;text-align:center;
+}
+
+/* Visit steps */
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px}
+.step{text-align:center;padding:15px 25px}
+.step-no{
+  margin:0 auto 22px;width:66px;height:66px;
+  border:1px solid var(--gold);border-radius:50%;
+  display:grid;place-items:center;color:var(--green);
+  font-family:'Playfair Display';font-size:25px;
+}
+.step h3{font-family:'Playfair Display';font-size:22px;font-weight:500}
+.step p{font-size:12px;color:var(--muted);line-height:1.8;margin-top:10px}
+
+/* Gallery */
+.gallery{background:#f0f1e9}
+.gallery-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px}
+.gallery-item{position:relative;overflow:hidden}
+.gallery-item:first-child{grid-row:span 2}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.gallery-item:hover img{transform:scale(1.09)}
+.gallery-item:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.4))}
+.gallery-caption{position:absolute;z-index:2;bottom:18px;left:20px;color:white;font-size:12px;letter-spacing:1px}
+
+/* Reviews */
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:45px}
+.review-card{padding:30px;background:white;border:1px solid var(--line)}
+.stars{color:#bd9b5b;letter-spacing:4px;font-size:14px}
+.review-card p{font-family:'Playfair Display';font-size:19px;line-height:1.6;margin:20px 0;color:#42544a}
+.review-card small{color:var(--muted);font-size:10px}
+.review-note{font-size:11px;color:var(--muted);text-align:center;margin-top:24px}
+
+/* Appointment */
+.appointment{background:#f0f1e9}
+.appointment-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.appointment-info{background:var(--green);padding:45px 36px;color:white}
+.appointment-info h3{font-family:'Playfair Display';font-size:31px;font-weight:500}
+.appointment-info p{color:#c5d1c8;font-size:12px;line-height:1.9;margin-top:15px}
+.contact-line{display:flex;gap:14px;margin-top:27px;align-items:center}
+.contact-line span{width:38px;height:38px;border:1px solid #678678;display:grid;place-items:center;color:#e4c48a}
+.contact-line strong{display:block;font-size:12px}
+.contact-line small{display:block;color:#bdc9c0;font-size:10px;margin-top:4px}
+.appointment-form{
+  background:white;padding:40px;box-shadow:var(--shadow);
+}
+.form-title{font-family:'Playfair Display';font-size:29px;color:var(--green);margin-bottom:10px}
+.form-intro{font-size:12px;color:var(--muted);margin-bottom:28px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+.field label{font-size:10px;font-weight:800;letter-spacing:1px;color:#526258;text-transform:uppercase}
+.field input,.field select,.field textarea{
+  border:1px solid #e5e8df;background:#fafbf8;
+  padding:14px;font-size:12px;outline:none;width:100%;
+  transition:.3s;border-radius:2px;color:var(--ink);
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green3);background:white}
+.field textarea{height:100px;resize:vertical}
+.consent{display:flex;align-items:flex-start;gap:10px;font-size:11px;color:var(--muted);margin:20px 0}
+.consent input{margin-top:2px}
+.form-note{font-size:10px;color:var(--muted);margin-top:15px;line-height:1.6}
+.success{display:none;background:#eaf3e9;color:var(--green);padding:14px;margin-top:18px;font-size:12px;line-height:1.7}
+
+/* FAQ */
+.faq-grid{max-width:850px;margin:45px auto 0}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-question{
+  width:100%;background:none;border:0;padding:22px 0;
+  display:flex;justify-content:space-between;text-align:left;
+  gap:20px;color:var(--green);font-weight:700;font-size:14px;
+}
+.faq-question span:last-child{font-size:22px;color:var(--gold);transition:.3s}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-answer p{font-size:12px;line-height:1.9;color:var(--muted);padding:0 35px 20px 0}
+.faq-item.active .faq-answer{max-height:220px}
+.faq-item.active .faq-question span:last-child{transform:rotate(45deg)}
+
+/* Map */
+.map-section{background:white;padding:0}
+.map-frame{width:100%;height:390px;border:0;display:block;filter:grayscale(.35)}
+.map-overlay{
+  background:white;max-width:430px;padding:30px;
+  position:relative;margin:-170px 5% 0 auto;
+  z-index:3;box-shadow:var(--shadow);
+}
+.map-overlay h3{font-family:'Playfair Display';font-size:26px;color:var(--green)}
+.map-overlay p{font-size:12px;line-height:1.8;color:var(--muted);margin:12px 0 20px}
+
+/* Footer */
+footer{background:#0d2d23;color:white;padding:75px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:70px}
+.footer-brand{font-family:'Playfair Display';font-size:28px;color:#e3c38b}
+.footer-about{font-size:12px;line-height:1.9;color:#b8c7bd;max-width:330px;margin-top:18px}
+.footer-col h4{font-size:12px;letter-spacing:2px;color:#e1c28c;margin-bottom:24px}
+.footer-col a,.footer-col p{display:block;font-size:12px;color:#b8c7bd;margin:13px 0;line-height:1.7;transition:.3s}
+.footer-col a:hover{color:white;padding-left:5px}
+.footer-bottom{
+  border-top:1px solid #315044;margin-top:55px;padding-top:22px;
+  display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;
+  color:#a9b9ad;font-size:10px;
+}
+.footer-disclaimer{font-size:10px;color:#a9b9ad;line-height:1.8;margin-top:25px}
+
+/* Floating buttons */
+.float-whatsapp{
+  position:fixed;right:24px;bottom:25px;z-index:100;
+  height:58px;width:58px;border-radius:50%;
+  display:grid;place-items:center;background:#20b968;color:white;
+  font-size:27px;box-shadow:0 8px 25px rgba(0,0,0,.2);
+  transition:.3s;
+}
+.float-whatsapp:hover{transform:scale(1.12)}
+.back-top{
+  position:fixed;right:30px;bottom:95px;z-index:99;
+  height:38px;width:38px;border:0;background:var(--green);
+  color:white;opacity:0;pointer-events:none;transition:.3s;
+}
+.back-top.visible{opacity:1;pointer-events:auto}
+
+/* Animation */
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .8s,transform .8s}
+.reveal.show{opacity:1;transform:translateY(0)}
+.delay1{transition-delay:.15s}
+.delay2{transition-delay:.3s}
+.delay3{transition-delay:.45s}
+.cursor-glow{position:fixed;pointer-events:none;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(189,155,91,.07),transparent 70%);z-index:-1}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+
+/* Responsive */
+@media(max-width:950px){
+  .navlinks{gap:15px}
+  .navlinks a{font-size:10px}
+  .brand{min-width:auto}
+  .nav-action{display:none}
+  .about-grid{gap:45px}
+  .appointment-grid{gap:30px}
+}
+@media(max-width:760px){
+  .section{padding:75px 0}
+  .topbar{font-size:9px}
+  .nav{height:70px}
+  .menu-toggle{display:block}
+  .navlinks{
+    position:absolute;top:70px;left:0;width:100%;
+    background:var(--cream);padding:25px 5%;
+    display:none;flex-direction:column;align-items:flex-start;
+    border-bottom:1px solid var(--line);gap:22px;
+    box-shadow:var(--shadow);
+  }
+  .navlinks.open{display:flex}
+  .navlinks a{font-size:12px}
+  .hero{min-height:680px}
+  .hero-content{padding:95px 0}
+  .hero-decoration{width:200px;height:200px;right:-65px;top:10%;opacity:.5}
+  .hero-meta{gap:22px;margin-top:45px}
+  .trust-grid{grid-template-columns:1fr}
+  .trust-item{justify-content:flex-start;padding:20px 10%;border-right:0;border-bottom:1px solid var(--line)}
+  .about-grid,.philosophy-grid,.appointment-grid{grid-template-columns:1fr}
+  .about-images{margin:0 12px}
+  .about-main-img{height:400px}
+  .about-stamp{left:-15px}
+  .about-content{padding-top:15px}
+  .service-grid{grid-template-columns:1fr 1fr}
+  .philosophy-image{height:350px}
+  .steps-grid{grid-template-columns:1fr;gap:20px}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 170px 170px}
+  .gallery-item:first-child{grid-row:span 2}
+  .review-grid{grid-template-columns:1fr}
+  .appointment-info{padding:35px 25px}
+  .appointment-form{padding:28px 20px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:35px}
+  .footer-grid>div:first-child{grid-column:1/-1}
+  .map-overlay{margin:0;width:90%;max-width:none}
+}
+@media(max-width:480px){
+  .container{width:90%}
+  .brand-name{font-size:18px}
+  .brand-icon{height:40px;width:40px}
+  .hero h1{font-size:47px}
+  .hero-description{font-size:13px}
+  .hero-buttons{flex-direction:column;align-items:stretch}
+  .hero-buttons .btn{width:100%}
+  .hero-meta{gap:18px}
+  .meta-item strong{font-size:17px}
+  .about-points{grid-template-columns:1fr}
+  .service-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 145px 145px;gap:8px}
+  .form-grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-grid>div:first-child{grid-column:auto}
+  .footer-bottom{flex-direction:column}
+  .float-whatsapp{right:17px;bottom:17px}
+  .back-top{right:27px;bottom:83px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <strong>SHASHWAT AYURVEDA</strong> &nbsp; | &nbsp; Traditional Ayurvedic Care · Azamgarh
+</div>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="brand">
+      <div class="brand-icon">✿</div>
+      <div>
+        <div class="brand-name">Shashwat Ayurveda</div>
+        <span class="brand-small">AYURVEDIC CLINIC · AZAMGARH</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+    <nav class="navlinks" id="navLinks">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#services">SERVICES</a>
+      <a href="#approach">OUR APPROACH</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <a href="#appointment" class="btn btn-primary nav-action">BOOK CONSULTATION ↗</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-decoration"></div>
+  <div class="floating-leaf leaf1">✿</div>
+  <div class="floating-leaf leaf2">❧</div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-label">AYURVEDIC HEALTHCARE · AZAMGARH</div>
+
+      <h1>
+        Rediscover<br>
+        The Art Of<br>
+        <em>Natural Care.</em>
+      </h1>
+
+      <p class="hero-description">
+        Welcome to Shashwat Ayurveda, an Ayurvedic clinic in
+        Harra Ki Chungi, Azamgarh. Explore our areas of consultation
+        and connect with the clinic for more information.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#appointment" class="btn btn-primary">
+          REQUEST AN APPOINTMENT ↗
+        </a>
+        <a href="#about" class="btn btn-outline">DISCOVER OUR CLINIC →</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="meta-item">
+          <strong>4.7 / 5</strong>
+          <small>Google listing rating</small>
+        </div>
+        <div class="meta-item">
+          <strong>Ayurveda</strong>
+          <small>Healthcare approach</small>
+        </div>
+        <div class="meta-item">
+          <strong>Azamgarh</strong>
+          <small>Uttar Pradesh, India</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust-strip">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <div class="trust-icon">❋</div>
+      <div>
+        <strong>AYURVEDIC APPROACH</strong>
+        <small>Traditional healthcare consultation</small>
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">⌖</div>
+      <div>
+        <strong>CONVENIENT LOCATION</strong>
+        <small>Harra Ki Chungi, Azamgarh</small>
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">♡</div>
+      <div>
+        <strong>PERSONAL ENQUIRIES</strong>
+        <small>Contact the clinic directly</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-images reveal">
+      <img class="about-main-img"
+        src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=85"
+        alt="Peaceful natural wellness environment">
+      <img class="about-secondary"
+        src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=700&q=85"
+        alt="Natural botanical wellness products">
+      <div class="about-stamp">
+        <strong>आयुर्वेद</strong>
+        <small>TRADITIONAL WELLNESS</small>
+      </div>
+    </div>
+
+    <div class="about-content reveal delay1">
+      <div class="eyebrow">WELCOME TO SHASHWAT</div>
+      <h2 class="heading">
+        A Thoughtful Approach To <span>Healthcare.</span>
+      </h2>
+      <p class="subtext">
+        Shashwat Ayurveda is located at Harra Ki Chungi,
+        near District Hospital, Azamgarh.
+        The clinic focuses on Ayurvedic consultations across
+        several healthcare categories.
+      </p>
+      <p class="subtext">
+        Our website makes it easier to explore the clinic,
+        understand its areas of consultation and get in touch
+        before planning a visit.
+      </p>
+
+      <div class="about-points">
+        <div class="point">
+          <div class="point-icon">✿</div>
+          <div>
+            <strong>Ayurvedic Care</strong>
+            <small>Traditional approach to wellness.</small>
+          </div>
+        </div>
+        <div class="point">
+          <div class="point-icon">♡</div>
+          <div>
+            <strong>Consultation</strong>
+            <small>Enquire directly about your concerns.</small>
+          </div>
+        </div>
+        <div class="point">
+          <div class="point-icon">⌖</div>
+          <div>
+            <strong>Local Clinic</strong>
+            <small>Located in Azamgarh, Uttar Pradesh.</small>
+          </div>
+        </div>
+        <div class="point">
+          <div class="point-icon">☘</div>
+          <div>
+            <strong>Multiple Areas</strong>
+            <small>Explore the listed consultation categories.</small>
+          </div>
+        </div>
+      </div>
+
+      <a href="#services" class="btn btn-primary" style="margin-top:32px">
+        EXPLORE SERVICES →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="eyebrow">AREAS OF CONSULTATION</div>
+      <h2 class="heading">Explore Our <span>Healthcare Areas.</span></h2>
+      <p class="subtext">
+        Explore the healthcare categories associated with the clinic.
+        Contact the clinic to confirm availability, suitability
+        and treatment details.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card reveal">
+        <span class="service-number">01</span>
+        <div class="service-icon">✿</div>
+        <h3>Skin Care</h3>
+        <p>
+          Ayurvedic consultation for skin-related concerns.
+          Ask the clinic about assessment and available care options.
+        </p>
+        <a href="#appointment" class="service-link">ENQUIRE NOW →</a>
+      </article>
+
+      <article class="service-card reveal delay1">
+        <span class="service-number">02</span>
+        <div class="service-icon">❋</div>
+        <h3>Hair & Scalp Care</h3>
+        <p>
+          Consultation regarding hair fall and scalp-related
+          concerns. Individual assessment is important.
+        </p>
+        <a href="#appointment" class="service-link">ENQUIRE NOW →</a>
+      </article>
+
+      <article class="service-card reveal delay2">
+        <span class="service-number">03</span>
+        <div class="service-icon">☘</div>
+        <h3>Ayurvedic Consultation</h3>
+        <p>
+          Learn about traditional Ayurvedic consultations
+          and ask which options may be appropriate for you.
+        </p>
+        <a href="#appointment" class="service-link">ENQUIRE NOW →</a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-number">04</span>
+        <div class="service-icon">♡</div>
+        <h3>Men's Health</h3>
+        <p>
+          Private enquiries and consultation regarding
+          intimate and men's health concerns.
+        </p>
+        <a href="#appointment" class="service-link">ENQUIRE NOW →</a>
+      </article>
+
+      <article class="service-card reveal delay1">
+        <span class="service-number">05</span>
+        <div class="service-icon">❀</div>
+        <h3>Piles & Anorectal Care</h3>
+        <p>
+          Enquire about Ayurvedic anorectal care and
+          whether specialised consultation is available.
+        </p>
+        <a href="#appointment" class="service-link">ENQUIRE NOW →</a>
+      </article>
+
+      <article class="service-card reveal delay2">
+        <span class="service-number">06</span>
+        <div class="service-icon">☼</div>
+        <h3>Joint & Wellness Care</h3>
+        <p>
+          Enquire about joint-related concerns and traditional
+          wellness approaches, including Panchakarma.
+        </p>
+        <a href="#appointment" class="service-link">ENQUIRE NOW →</a>
+      </article>
+
+    </div>
+
+    <p style="text-align:center;font-size:11px;color:#78847c;margin-top:28px">
+      Services and procedures must be confirmed directly with the clinic.
+      No treatment outcome is guaranteed.
+    </p>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="section philosophy" id="approach">
+  <div class="container philosophy-grid">
+    <div class="reveal">
+      <div class="eyebrow">OUR APPROACH</div>
+      <h2 class="heading">
+        Rooted In Tradition.<br>
+        Focused On <span>Wellness.</span>
+      </h2>
+      <p class="subtext">
+        Ayurveda is a traditional system of healthcare.
+        Understanding individual needs and seeking appropriate
+        professional guidance are important parts of any
+        healthcare journey.
+      </p>
+
+      <div class="philosophy-list">
+        <div class="philosophy-row">
+          <i>01</i>
+          <div>
+            <strong>Understand Your Concerns</strong>
+            <small>Discuss your symptoms and health history.</small>
+          </div>
+        </div>
+        <div class="philosophy-row">
+          <i>02</i>
+          <div>
+            <strong>Ask About Your Options</strong>
+            <small>Understand available consultations and procedures.</small>
+          </div>
+        </div>
+        <div class="philosophy-row">
+          <i>03</i>
+          <div>
+            <strong>Make Informed Decisions</strong>
+            <small>Discuss benefits, risks and alternatives with a qualified practitioner.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal delay1">
+      <img class="philosophy-image"
+        src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1100&q=85"
+        alt="Natural green landscape">
+      <div class="philosophy-quote">
+        "A mindful approach to wellbeing begins with understanding."
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO VISIT -->
+<section class="section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="eyebrow">PLAN YOUR VISIT</div>
+      <h2 class="heading">Getting Started Is <span>Simple.</span></h2>
+      <p class="subtext">
+        Contact the clinic before visiting to confirm consultation
+        availability and timing.
+      </p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step reveal">
+        <div class="step-no">01</div>
+        <h3>Contact Us</h3>
+        <p>Call the clinic or send an appointment enquiry through WhatsApp.</p>
+      </div>
+      <div class="step reveal delay1">
+        <div class="step-no">02</div>
+        <h3>Discuss Your Visit</h3>
+        <p>Ask about consultation availability, timings and relevant details.</p>
+      </div>
+      <div class="step reveal delay2">
+        <div class="step-no">03</div>
+        <h3>Visit The Clinic</h3>
+        <p>Use Google Maps to find the location and plan your journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="eyebrow">A CALM AND NATURAL EXPERIENCE</div>
+      <h2 class="heading">Inspired By <span>Nature.</span></h2>
+      <p class="subtext">
+        Visual inspiration for a traditional wellness experience.
+        These are illustrative stock photographs, not verified
+        photographs of the clinic.
+      </p>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1000&q=85" alt="Wellness environment">
+        <div class="gallery-caption">MINDFUL WELLNESS</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=85" alt="Spa interior">
+        <div class="gallery-caption">TRANQUILITY</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=800&q=85" alt="Natural herbs">
+        <div class="gallery-caption">NATURE</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=85" alt="Green plants">
+        <div class="gallery-caption">BOTANICAL INSPIRATION</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=85" alt="Natural products">
+        <div class="gallery-caption">NATURAL LIVING</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="eyebrow">GOOGLE BUSINESS LISTING</div>
+      <h2 class="heading">Discover Our <span>Reputation.</span></h2>
+      <p class="subtext">
+        Check the latest reviews directly on the clinic's Google
+        Maps listing before making your decision.
+      </p>
+    </div>
+
+    <div class="review-grid">
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>Read patient experiences and feedback directly from Google.</p>
+        <small>VIEW ORIGINAL GOOGLE REVIEWS</small>
+      </div>
+      <div class="review-card reveal delay1">
+        <div class="stars">★★★★★</div>
+        <p>Explore the clinic's location, photographs and available listing information.</p>
+        <small>EXPLORE THE CLINIC</small>
+      </div>
+      <div class="review-card reveal delay2">
+        <div class="stars">★★★★★</div>
+        <p>Make an informed choice by reviewing feedback and discussing your concerns.</p>
+        <small>YOUR HEALTH MATTERS</small>
+      </div>
+    </div>
+
+    <p class="review-note">
+      Rating displayed from the available business listing. Individual
+      review quotations and patient testimonials are not reproduced here.
+    </p>
+
+    <div style="text-align:center;margin-top:32px">
+      <a href="https://maps.app.goo.gl/hyek7pzLjNRqnBQ39"
+         target="_blank" rel="noopener" class="btn btn-primary">
+        VIEW GOOGLE MAPS & REVIEWS ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section class="section appointment" id="appointment">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="eyebrow">GET IN TOUCH</div>
+      <h2 class="heading">Let's Begin A <span>Conversation.</span></h2>
+      <p class="subtext">
+        Have a question or want to enquire about a consultation?
+        Send your details and contact the clinic.
+      </p>
+    </div>
+
+    <div class="appointment-grid">
+      <div class="appointment-info reveal">
+        <h3>We Are Here To Help.</h3>
+        <p>
+          Reach out to Shashwat Ayurveda for enquiries about
+          consultation availability, clinic timings and location.
+        </p>
+
+        <div class="contact-line">
+          <span>☎</span>
+          <div>
+            <strong>PHONE NUMBER</strong>
+            <small id="displayPhone">+91 84168 59436</small>
+          </div>
+        </div>
+
+        <div class="contact-line">
+          <span>⌖</span>
+          <div>
+            <strong>CLINIC ADDRESS</strong>
+            <small>Harra Ki Chungi, near District Hospital, Pura Jodhi, Azamgarh, UP 276001</small>
+          </div>
+        </div>
+
+        <div class="contact-line">
+          <span>◷</span>
+          <div>
+            <strong>LISTED CLINIC HOURS</strong>
+            <small>Generally 9:00 AM – 8:00 PM on listed weekdays. Confirm before visiting.</small>
+          </div>
+        </div>
+
+        <div class="contact-line">
+          <span>✉</span>
+          <div>
+            <strong>APPOINTMENT ENQUIRIES</strong>
+            <small>WhatsApp and phone contact</small>
+          </div>
+        </div>
+
+        <a id="callButton" href="tel:+918416859436"
+           class="btn btn-outline" style="margin-top:35px;width:100%">
+          CALL THE CLINIC ↗
+        </a>
+      </div>
+
+      <div class="appointment-form reveal delay1">
+        <h3 class="form-title">Request A Consultation</h3>
+        <p class="form-intro">
+          Fill in your details. WhatsApp will open with your enquiry.
+        </p>
+
+        <form id="appointmentForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="patientName">Full Name *</label>
+              <input id="patientName" type="text" placeholder="Your name" required maxlength="80">
+            </div>
+
+            <div class="field">
+              <label for="patientPhone">Phone Number *</label>
+              <input id="patientPhone" type="tel" placeholder="Your mobile number"
+                     required pattern="[0-9+\-\s]{8,16}" maxlength="16">
+            </div>
+
+            <div class="field">
+              <label for="visitDate">Preferred Date *</label>
+              <input id="visitDate" type="date" required>
+            </div>
+
+            <div class="field">
+              <label for="visitTime">Preferred Time</label>
+              <select id="visitTime">
+                <option value="">Select time</option>
+                <option>Morning (9 AM - 12 PM)</option>
+                <option>Afternoon (12 PM - 3 PM)</option>
+                <option>Evening (3 PM - 6 PM)</option>
+                <option>After 6 PM</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="consultationType">Enquiry Category</label>
+              <select id="consultationType">
+                <option value="General enquiry">General enquiry</option>
+                <option value="Skin care">Skin care</option>
+                <option value="Hair and scalp care">Hair and scalp care</option>
+                <option value="Ayurvedic consultation">Ayurvedic consultation</option>
+                <option value="Men's health">Men's health</option>
+                <option value="Piles and anorectal care">Piles and anorectal care</option>
+                <option value="Joint and wellness care">Joint and wellness care</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="patientMessage">Message (Optional)</label>
+              <textarea id="patientMessage"
+                placeholder="Write your enquiry here. Please avoid sharing sensitive medical information."></textarea>
+            </div>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" id="consent" required>
+            <span>I agree to share these contact details with the clinic for this enquiry.</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary" style="width:100%">
+            SEND ENQUIRY ON WHATSAPP ↗
+          </button>
+
+          <div class="success" id="formSuccess">
+            Your enquiry is ready. WhatsApp should open in a new window.
+            Please press Send in WhatsApp to submit your request.
+          </div>
+
+          <p class="form-note">
+            This form creates a WhatsApp message only. It does not confirm
+            an appointment or store patient information. The clinic must
+            confirm your requested date and time.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="eyebrow">COMMON QUESTIONS</div>
+      <h2 class="heading">Frequently Asked <span>Questions.</span></h2>
+      <p class="subtext">Some useful information before contacting the clinic.</p>
+    </div>
+
+    <div class="faq-grid reveal">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Where is Shashwat Ayurveda located?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            The clinic is listed at Harra Ki Chungi, near District Hospital,
+            Pura Jodhi, Azamgarh, Uttar Pradesh 276001.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How can I contact the clinic?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            You can use the call and WhatsApp options on this website.
+            Please verify the displayed contact number before publishing.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I request an appointment online?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes. Fill out the enquiry form and send your request through
+            WhatsApp. Your appointment is not confirmed until the clinic
+            responds and confirms it.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What healthcare categories are available?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            The available listing mentions skin, hair, men's health,
+            anorectal and joint-related consultation areas. Contact
+            the clinic to verify specific services and procedures.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are the clinic timings fixed?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            The available listing shows weekday operating hours.
+            Timings can change, so call ahead to confirm availability,
+            especially on Sundays and public holidays.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Does this website provide medical advice?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            No. The website provides general clinic information and
+            contact facilities. It does not diagnose conditions,
+            prescribe medicines or replace consultation with a
+            qualified healthcare professional.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="map-section" id="contact">
+  <iframe
+    class="map-frame"
+    title="Shashwat Ayurveda clinic location"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://maps.google.com/maps?q=Shashwat%20Ayurveda%20Harra%20Ki%20Chungi%20Azamgarh&t=&z=15&ie=UTF8&iwloc=&output=embed">
+  </iframe>
+
+  <div class="container">
+    <div class="map-overlay">
+      <div class="eyebrow">FIND OUR LOCATION</div>
+      <h3>Visit Shashwat Ayurveda.</h3>
+      <p>
+        Harra Ki Chungi, near District Hospital,
+        Pura Jodhi, Azamgarh, Uttar Pradesh 276001, India.
+      </p>
+      <a href="https://maps.app.goo.gl/hyek7pzLjNRqnBQ39"
+         target="_blank" rel="noopener" class="btn btn-primary">
+        GET DIRECTIONS ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Shashwat Ayurveda</div>
+        <p class="footer-about">
+          An Ayurvedic clinic located in Harra Ki Chungi,
+          Azamgarh, Uttar Pradesh. Explore clinic information
+          and contact us for consultation enquiries.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Consultation Areas</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#appointment">Appointment Enquiry</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <p>Harra Ki Chungi, Azamgarh, UP 276001</p>
+        <a href="tel:+918416859436">+91 84168 59436</a>
+        <a href="https://maps.app.goo.gl/hyek7pzLjNRqnBQ39" target="_blank" rel="noopener">Google Maps Location ↗</a>
+        <a href="#appointment">Send An Enquiry ↗</a>
+      </div>
+    </div>
+
+    <p class="footer-disclaimer">
+      MEDICAL DISCLAIMER: The information on this website is for
+      general informational purposes only. It does not constitute
+      medical advice, diagnosis or treatment. Healthcare decisions
+      should be made in consultation with an appropriately qualified
+      healthcare professional. No specific result or cure is guaranteed.
+      The listed services and clinic details should be verified with
+      the clinic before publication.
+    </p>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Shashwat Ayurveda. All rights reserved.</span>
+      <span>Designed with care · Azamgarh, India</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING ACTIONS -->
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<a class="float-whatsapp" id="floatWhatsapp"
+   href="https://wa.me/918416859436"
+   target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+  ☏
+</a>
+
+<script>
+/* =====================================
+   CLINIC CONFIGURATION
+   Edit these details before deployment.
+===================================== */
+
+const CLINIC = {
+  name: "Shashwat Ayurveda",
+  phone: "918416859436",
+  whatsapp: "918416859436",
+  maps: "https://maps.app.goo.gl/hyek7pzLjNRqnBQ39",
+  address: "Harra Ki Chungi, near District Hospital, Pura Jodhi, Azamgarh, Uttar Pradesh 276001"
+};
+
+/* Navigation */
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  menuToggle.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
+});
+
+document.querySelectorAll(".navlinks a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.textContent = "☰";
+  });
+});
+
+/* Reveal animations */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.12});
+
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+/* FAQ accordion */
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = button.parentElement;
+    const wasActive = item.classList.contains("active");
+
+    document.querySelectorAll(".faq-item").forEach(faq => {
+      faq.classList.remove("active");
+    });
+
+    if(!wasActive) item.classList.add("active");
+  });
+});
+
+/* Back to top */
+const backTop = document.getElementById("backTop");
+
+window.addEventListener("scroll", () => {
+  backTop.classList.toggle("visible", window.scrollY > 500);
+}, {passive:true});
+
+backTop.addEventListener("click", () => {
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+
+/* Date restrictions */
+const dateInput = document.getElementById("visitDate");
+const today = new Date();
+const localToday = new Date(today.getTime() - today.getTimezoneOffset()*60000)
+  .toISOString().split("T")[0];
+
+dateInput.min = localToday;
+
+/* Configure contact details from one source */
+const formattedPhone = "+" + CLINIC.phone;
+
+document.getElementById("displayPhone").textContent = formattedPhone;
+document.getElementById("callButton").href = "tel:+" + CLINIC.phone;
+document.getElementById("floatWhatsapp").href = "https://wa.me/" + CLINIC.whatsapp;
+
+/* Appointment enquiry via WhatsApp */
+document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("patientName").value.trim();
+  const phone = document.getElementById("patientPhone").value.trim();
+  const date = document.getElementById("visitDate").value;
+  const time = document.getElementById("visitTime").value || "Not specified";
+  const category = document.getElementById("consultationType").value;
+  const message = document.getElementById("patientMessage").value.trim();
+  const consent = document.getElementById("consent").checked;
+
+  if(!name || !phone || !date || !consent) {
+    alert("Please complete the required fields and give consent.");
+    return;
+  }
+
+  if(!/^[0-9+\-\s]{8,16}$/.test(phone)) {
+    alert("Please enter a valid contact number.");
+    return;
+  }
+
+  if(date < localToday) {
+    alert("Please select today or a future date.");
+    return;
+  }
+
+  const whatsappMessage =
+`Hello ${CLINIC.name},
+
+I would like to enquire about a consultation.
+
+Name: ${name}
+Contact Number: ${phone}
+Preferred Date: ${date}
+Preferred Time: ${time}
+Enquiry Category: ${category}
+Message: ${message || "No additional message"}
+
+Please let me know about availability and confirmation.
+
+Thank you.`;
+
+  const url = "https://wa.me/" + CLINIC.whatsapp +
+    "?text=" + encodeURIComponent(whatsappMessage);
+
+  const newWindow = window.open(url, "_blank");
+
+  if(!newWindow) {
+    window.location.href = url;
+  } else {
+    newWindow.opener = null;
+  }
+
+  document.getElementById("formSuccess").style.display = "block";
+});
+
+/* Dynamic footer year */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* Close mobile menu if user clicks outside */
+document.addEventListener("click", event => {
+  if(!event.target.closest("header")) {
+    navLinks.classList.remove("open");
+    menuToggle.textContent = "☰";
+  }
+});
+
+/* Respect reduced-motion preference */
+if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.querySelectorAll(".reveal").forEach(el => {
+    el.classList.add("show");
+  });
+}
+</script>
+
+</body>
+</html>
